@@ -25,7 +25,8 @@ var english_examination_resources = [
 var dataFetched = false;
 
 async function fetchData() {
-    if (window.location.protocol == "file") {
+    console.log(window.location.protocol)
+    if (window.location.protocol == "file:") {
         dataFetched = true;
     } else {
         console.log("Starting to load the data");
