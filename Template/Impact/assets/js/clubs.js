@@ -7,7 +7,7 @@ async function buildClubBlocks() {
     let section = document.getElementById('clubs-content');
 
     for(const info of clubs){
-        console.log(info.name)
+        console.log(info)
     }
 
 }

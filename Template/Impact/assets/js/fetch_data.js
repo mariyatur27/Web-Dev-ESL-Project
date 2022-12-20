@@ -4,6 +4,11 @@
 var clubs = [
     {
         "name": "WCI Web Dev-1",
+        "meeting_time": "2:30 pm Tuesdays",
+        "meeting_place": "Room 400",
+        "description" : "Web developmnet club",
+        "club_logo": "coming soon",
+        "google_classroom_code": ""
     }
 ];
 
