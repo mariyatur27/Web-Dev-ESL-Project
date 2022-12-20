@@ -3,7 +3,7 @@
 //TO DO: Determine what information will be displayed for each club
 var clubs = [
     {
-        "name": "WCI Web Dev"
+        "name": "WCI Web Dev-1",
     }
 ];
 
