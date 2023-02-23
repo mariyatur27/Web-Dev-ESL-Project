@@ -28,6 +28,11 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Linking Additional Files -->
+  <script src="assets/data/ap_resources.json"></script>
+  <script src="assets/js/fetch_data.js"></script>
+  <script src="assets/js/ap_resources.js"></script>
+
   <!-- =======================================================
   * Template Name: Impact - v1.1.1
   * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
@@ -160,6 +165,26 @@
   <section class="main-content-area">
     <div id="ap-resources-content">
         
+    </div>
+  </section>
+
+  <section class="main-content-area">
+    <div id="user-interactive-area">
+        <div class="centered">
+          <h2>Check out how you can get enrolled in AP at WCI!</h2>
+        </div>
+        <div class="centered" style="margin-top:3%">
+          <input type="text" id="ap-course-searchbar" placeholder="Find an AP course..." autocomplete="off" oninput="outputResults(this.value)" onfocus="outputResults(this.value)" >
+          <button id="submit-ap-search">Search</button>
+        </div>
+        <div class="centered">
+          <ul id="results-list">
+
+          </ul>
+        </div>
+        <div class="centered">
+          <div class="prerequisits" id="prerequisits-box"></div>
+        </div>
     </div>
   </section>
   <!-- End of Club section -->

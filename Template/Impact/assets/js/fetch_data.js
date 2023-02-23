@@ -15,14 +15,24 @@ var clubs = [
 //TO DO: Determine what information will be displayed for each AP resource
 var ap_resources = [
     {
-        "name": "WCI Web Dev-2"
+        "name": "ap calc",
+        "course_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas alias numquam accusantium placeat aut sit est dolores recusandae ea, perspiciatis repellat, rerum, sapiente cum molestiae reprehenderit? Placeat, perspiciatis eligendi.",
+        "prerequisits": ['gr 11 math', 'gr 10 math']
+    },
+    {
+        "name": "ap chem",
+        "course_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas alias numquam accusantium placeat aut sit est dolores recusandae ea, perspiciatis repellat, rerum, sapiente cum molestiae reprehenderit? Placeat, perspiciatis eligendi.",
+        "prerequisits": ['gr 11 chem', 'gr 10 sciences']
     }
 ];
 
 //TO DO: Determine what information will be displayed for each English resource
 var english_examination_resources = [
     {
-        "name": "WCI Web Dev-3"
+        "name": "lol"
+    },
+    {
+        "name": "yoo"
     }
 ];
 

@@ -4,6 +4,75 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+/*
+Custom JS - START
+*/
+async function outputResults(value){
+  if (!dataFetched){
+    await fetchData();
+  }
+  //clearSearch();
+
+  if (value && value.trim().length > 0){
+    value = value.trim().toLowerCase();
+    displayResults(value)
+  }
+  else{
+    clearSearch();
+  }
+}
+
+function clearSearch() {
+  var results = document.getElementById('results-list');
+  results.innerHTML = "";
+  results.style.opacity = '0';
+  var box = document.getElementById('prerequisits-box');
+  box.innerHTML = "";
+}
+
+function displayResults(value){
+  var results = document.getElementById('results-list');
+  for(const info of ap_resources){
+    if (info.name == value){
+      results.style.opacity = '1';
+      let result_ele = document.createElement('li'); result_ele.classList.add('search-bar-result-ele'); result_ele.innerHTML = value;
+      result_ele.addEventListener('click', function(){
+        displayPrerequisits(value);
+        results.style.display = 'none';
+      });
+      results.appendChild(result_ele);
+    }
+  }
+}
+
+function displayPrerequisits(value){
+  for(const info of ap_resources){
+    if(info.name == value){
+      var box = document.getElementById('prerequisits-box');
+      box.style.opacity = '1';
+      var title_1 = document.createElement('h5'); title_1.innerHTML = "Course Description for " + value + ":";
+      box.appendChild(title_1);
+      var course_dscr = document.createElement('p'); course_dscr.innerHTML = info.course_description;
+      box.appendChild(course_dscr);
+      var title_2 = document.createElement('h5'); title_2.innerHTML = "Prerequisits for " + value + ":";
+      box.appendChild(title_2);
+      var list = document.createElement('ul');
+      box.appendChild(list);
+      for(var i = 0; i < info.prerequisits.length; i++){
+        var prerequisits_text = document.createElement('li'); prerequisits_text.innerHTML = info.prerequisits[i];
+        box.appendChild(prerequisits_text);
+      }
+    }
+  }
+}
+
+
+
+/*
+Custom JS - END
+*/
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 

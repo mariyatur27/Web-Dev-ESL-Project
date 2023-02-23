@@ -56,6 +56,57 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Custom Styles
+--------------------------------------------------------------*/
+.centered{
+  display: flex;
+  justify-content: center;
+}
+.together{
+  display: flex;
+}
+#ap-course-searchbar{
+  width: 40%;
+  padding: 0.7%;
+  padding-left: 2%;
+  border-radius: 30px;
+  border: 1px #008374 solid;
+}
+button#submit-ap-search {
+  border-radius: 30px;
+  width: 7%;
+  margin-left: 0.6%;
+  border: none;
+  font-weight: 600;
+  color: white;
+  background: #008374;
+}
+#results-list{
+    opacity: 0;
+    list-style: none;
+    background: #e7e7e7;
+    width: 38%;
+    margin-left: -7.4%;
+    border-radius: 30px;
+    padding: 0.5%;
+    padding-left: 2%;
+}
+#results-list:hover{
+  cursor: pointer;
+  background: #d7d6d6;
+  transition-duration: 1s;
+}
+.left-aligned {
+  padding: 5%;
+  margin-left: 2%;
+}
+div#prerequisits-box {
+  width: 65%;
+  margin-top: 3%;
+  opacity: 0;
+}
+
+/*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
