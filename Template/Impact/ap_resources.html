@@ -185,11 +185,9 @@
         <option value="4">Academic</option>
         <option value="5">Applied</option>
       </select>
-      <button id="search-instructions" onclick="showInstructions()">Explore</button>
+      <button id="search-instructions" onclick="showInstructions()" class="primary-btn">Explore</button>
     </div>
-    <div id="instructions-container">
-
-    </div>
+    <div id="instructions-container"></div>
   </section>
 
   <section class="main-content-area">
@@ -199,7 +197,7 @@
         </div>
         <div class="centered" style="margin-top:3%">
           <input type="text" id="ap-course-searchbar" placeholder="Find an AP course..." autocomplete="off" oninput="outputResults(this.value)" onfocus="outputResults(this.value)" >
-          <button id="submit-ap-search">Search</button>
+          <button id="submit-ap-search" class="secondary-btn">Search</button>
         </div>
         <div class="centered">
           <ul id="results-list">

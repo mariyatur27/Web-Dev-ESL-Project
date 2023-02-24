@@ -80,6 +80,7 @@ function getInputfromSelect() {
   var value = options.value;
   var container = document.getElementById('instructions-container');
   container.style.opacity = '1';
+  container.innerHTML="";
     for(const info of ap_instructions){
       if (info.type == value){
         for (var i = 0; i < info.steps.length; i++){

@@ -44,14 +44,11 @@ var ap_instructions = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
         ]
     },
     {
         "type": "3",
         "steps": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
@@ -64,14 +61,11 @@ var ap_instructions = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
         ]
     },
     {
         "type": "5",
         "steps": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed aliquet pellentesque sapien sit amet lobortis.",

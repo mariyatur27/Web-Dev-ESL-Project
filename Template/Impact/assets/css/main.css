@@ -72,9 +72,19 @@ h6 {
   border-radius: 30px;
   border: 1px #008374 solid;
 }
-button#submit-ap-search {
+.secondary-btn {
   border-radius: 30px;
   width: 7%;
+  margin-left: 0.6%;
+  border: none;
+  font-weight: 600;
+  color: white;
+  background: #008374;
+}
+.primary-btn {
+  border-radius: 30px;
+  width: 17%;
+  padding: 1.5%;
   margin-left: 0.6%;
   border: none;
   font-weight: 600;
