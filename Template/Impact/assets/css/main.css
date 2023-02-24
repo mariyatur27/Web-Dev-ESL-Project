@@ -123,7 +123,10 @@ div#instructions-container {
   border-radius: 30px;
   font-size: large;
 }
-
+.instructions-read-styles{
+  text-decoration: line-through;
+  color: grey;
+}
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/

@@ -84,13 +84,23 @@ function getInputfromSelect() {
       if (info.type == value){
         for (var i = 0; i < info.steps.length; i++){
           let box = document.createElement('div'); box.classList.add('together');
-            let checkbox = document.createElement('input'); checkbox.type = 'checkbox'; checkbox.name = value;
-            let label = document.createElement('label'); label.innerHTML = info.steps[i];
+            let checkbox = document.createElement('input'); checkbox.type = 'checkbox'; checkbox.name = value; checkbox.id=i;
+            let label = document.createElement('label'); label.innerHTML = info.steps[i]; label.id = i + "-label";
             box.appendChild(checkbox);
             box.appendChild(label);
           container.appendChild(box);
           let linebreak = document.createElement('br');
           container.appendChild(linebreak);
+
+          //adding a function to the checkboxes
+          checkbox.addEventListener('change', function() {
+            if (this.checked){
+              document.getElementById(checkbox.id + "-label").classList.toggle('instructions-read-styles');
+            }
+            else{
+              document.getElementById(checkbox.id + "-label").classList.toggle('instructions-read-styles');
+            }
+          })
         }
       }
     }
