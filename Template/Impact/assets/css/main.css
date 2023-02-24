@@ -105,6 +105,24 @@ div#prerequisits-box {
   margin-top: 3%;
   opacity: 0;
 }
+.text-container {
+  width: 53%;
+  padding-left: 8%;
+}
+label {
+  line-height: 2;
+  margin-left: 2%;
+}
+div#instructions-container {
+  padding: 2%;
+  background: #eaeaea8c;
+  width: 65%;
+  opacity: 0;
+  margin-left: 8%;
+  margin-top: 2%;
+  border-radius: 30px;
+  font-size: large;
+}
 
 /*--------------------------------------------------------------
 # Sections & Section Header

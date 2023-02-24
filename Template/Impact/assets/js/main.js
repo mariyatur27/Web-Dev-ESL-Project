@@ -13,6 +13,7 @@ async function outputResults(value){
     await fetchData();
   }
   //clearSearch();
+  getInputfromSelect();
 
   if (value && value.trim().length > 0){
     value = value.trim().toLowerCase();
@@ -21,6 +22,13 @@ async function outputResults(value){
   else{
     clearSearch();
   }
+}
+
+async function showInstructions(){
+  if (!dataFetched){
+    await fetchData();
+  }
+  getInputfromSelect();
 }
 
 function clearSearch() {
@@ -65,6 +73,27 @@ function displayPrerequisits(value){
       }
     }
   }
+}
+
+function getInputfromSelect() {
+  var options = document.getElementById('student-type');
+  var value = options.value;
+  var container = document.getElementById('instructions-container');
+  container.style.opacity = '1';
+    for(const info of ap_instructions){
+      if (info.type == value){
+        for (var i = 0; i < info.steps.length; i++){
+          let box = document.createElement('div'); box.classList.add('together');
+            let checkbox = document.createElement('input'); checkbox.type = 'checkbox'; checkbox.name = value;
+            let label = document.createElement('label'); label.innerHTML = info.steps[i];
+            box.appendChild(checkbox);
+            box.appendChild(label);
+          container.appendChild(box);
+          let linebreak = document.createElement('br');
+          container.appendChild(linebreak);
+        }
+      }
+    }
 }
 
 
