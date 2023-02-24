@@ -13,7 +13,6 @@ async function outputResults(value){
     await fetchData();
   }
   //clearSearch();
-  getInputfromSelect();
 
   if (value && value.trim().length > 0){
     value = value.trim().toLowerCase();

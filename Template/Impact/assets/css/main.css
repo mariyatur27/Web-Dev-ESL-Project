@@ -94,7 +94,7 @@ h6 {
 #results-list{
     opacity: 0;
     list-style: none;
-    background: #e7e7e7;
+    box-shadow: 1px 6px 15px -6px rgb(0 0 0 / 10%);
     width: 38%;
     margin-left: -7.4%;
     border-radius: 30px;
@@ -125,7 +125,7 @@ label {
 }
 div#instructions-container {
   padding: 2%;
-  background: #eaeaea8c;
+  box-shadow: 1px 2px 15px 1px rgb(0 0 0 / 10%);
   width: 65%;
   opacity: 0;
   margin-left: 8%;
@@ -136,6 +136,30 @@ div#instructions-container {
 .instructions-read-styles{
   text-decoration: line-through;
   color: grey;
+}
+.ap-container {
+  flex: 0 0 29.333333%;
+  margin: 1%;
+  padding: 2%;
+  border-radius: 17px;
+  box-shadow: 1px 2px 15px 1px rgb(0 0 0 / 10%);
+  text-align: center;
+}
+div#ap-resources-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.openup-container{
+  display: none;
+}
+.info-block {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+.info-block p {
+  margin: 3%;
 }
 /*--------------------------------------------------------------
 # Sections & Section Header
