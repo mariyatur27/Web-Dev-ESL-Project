@@ -144,6 +144,7 @@ div#instructions-container {
   border-radius: 17px;
   box-shadow: 1px 2px 15px 1px rgb(0 0 0 / 10%);
   text-align: center;
+  cursor: pointer;
 }
 div#ap-resources-content {
   display: flex;
