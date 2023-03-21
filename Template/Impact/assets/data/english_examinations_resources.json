@@ -1,11 +1,9 @@
 [
   {
-    "englishExamination_1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi.",
-  "englishExamination_2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi.",
-  "englishExamination_3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animn."
-  },
-  {
-    "englishExamination_1": "englishExamination_1",
-    "englishExamination_2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi."
+    "Name": "Main Website for IELTS Test",
+    "Author": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
+    "Category": "English Proficiency Test resources",
+    "Description": "The main website for IELTS in Canada, resources on the description of IELTS, practice tests, test fees, and test bookings can be found here",
+    "Tip": "If you have not been in a Canadian educational institution for more than four years, consider taking one of the tests below as they are requisite for universities/colleges. ESL years are sometimes NOT considered to be one of the four years(For example, University of Waterloo), make sure you contact your post-secondary institutions to make sure.(Can be put on the website if you guys want to add some clarification)."
   }
 ]
