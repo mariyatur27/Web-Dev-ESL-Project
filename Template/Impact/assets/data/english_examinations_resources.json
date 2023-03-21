@@ -1,7 +1,6 @@
 [
   {
     "name": "Main Website for IELTS Test",
-    "author": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
     "category": "English Proficiency Test resources",
     "description": "The main website for IELTS in Canada, resources on the description of IELTS, practice tests, test fees, and test bookings can be found here",
     "tip": "If you have not been in a Canadian educational institution for more than four years, consider taking one of the tests below as they are requisite for universities/colleges. ESL years are sometimes NOT considered to be one of the four years(For example, University of Waterloo), make sure you contact your post-secondary institutions to make sure.(Can be put on the website if you guys want to add some clarification).",
@@ -9,10 +8,37 @@
   },
   {
     "name": "Main website for TOEFL test",
-    "author": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
     "category": "English Proficiency Test resources",
-    "description": "The leading website for TOEFL in Canada, resources on the description of IELTS, practice tests, test fees, test bookings can be found here.",
+    "description": "The leading website for TOEFL in Canada, resources on the description of TOEFL, practice tests, test fees, test bookings can be found here.",
     "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
     "link": "hhttps://www.ets.org/toefl.html"
+  }, 
+  {
+    "name": "Main Website for CELPIP Test",
+    "category": "English Proficiency Test resources",
+    "description": "The main website for CELPIP in Canada, resources on the description of CELPIP, practice tests, test fees, and test bookings can be found here",
+    "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
+    "link": "https://www.celpip.ca/"
+  },
+  {
+    "name": "Main website for CAEL",
+    "category": "English Proficiency Test resources",
+    "description": "The main website for CAEL in Canada, resources on the description of CAEL, practice tests, test fees, and test bookings can be found here",
+    "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
+    "link": "http://www.cael.ca/"
+  },
+  {
+    "name": "Main website for the Duolingo English Test",
+    "category": "English Proficiency Test resources",
+    "description": "The main website for the Duolingo English Test in Canada, resources on the description of the Duolingo English Test, practice tests, test fees, and test bookings can be found here",
+    "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
+    "link": "http://www.cael.ca/"
+  },
+  {
+    "name": "Main website for the Cambridge English Test",
+    "category": "English Proficiency Test resources",
+    "description": "The main website for the Cambridge English Test in Canada, resources on the description of the Cambridge English Test, practice tests, test fees, and test bookings can be found here",
+    "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
+    "link": "http://www.cael.ca/"
   }
 ]

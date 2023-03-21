@@ -46,6 +46,8 @@ aboutButton.addEventListener("click", function (event){
     //Prevetn the defult behaviour
     event.preventDefault()
     
+    //change url
+    history.pushState(null, null, "/about-us");
     
     //Load the html content
     const xhr = new XMLHttpRequest();
