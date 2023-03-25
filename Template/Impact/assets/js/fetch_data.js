@@ -160,9 +160,10 @@ async function fetchData() {
         dataFetched = true;
     } else {
         console.log("Starting to load the data");
-        clubs = await (await fetch("data/clubs.json")).json();
-        ap_resources = await (await fetch("data/ap_resources.json")).json();
-        english_examination_resources = await (await fetch("data/english_examination_resources.json")).json();
-    }
+        clubs = await (await fetch("assets/data/clubs.json")).json();
+        ap_resources = await (await fetch("assets/data/ap_resources.json")).json();
+        english_examination_resources = await (await fetch("assets/data/english_examination_resources.json")).json();
+        console.log("done");
+        }
     dataFetched = true;
 }
