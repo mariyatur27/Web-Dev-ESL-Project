@@ -144,7 +144,7 @@ const websiteContent =
         };
 
         //Open the html
-        xhr.open('GET', 'assets/templates/mainPage/english_examination_resources.html', true); //ToDo
+        xhr.open('GET', 'assets/templates/englishExamination/englishExamination.html', true);
 
         //Submit the page
         xhr.send();
@@ -178,7 +178,7 @@ const websiteContent =
         };
 
         //Open the html
-        xhr.open('GET', 'assets/templates/mainPage/home.html', true); //ToDo
+        xhr.open('GET', 'assets/templates/clubs/schoolClubs.html', true);
 
         //Submit the page
         xhr.send();
@@ -212,7 +212,7 @@ const websiteContent =
         };
 
         //Open the html
-        xhr.open('GET', 'assets/templates/mainPage/home.html', true); //ToDo
+        xhr.open('GET', 'assets/templates/advancedPlacemnet/advancedPlacement.html', true); //ToDo
 
         //Submit the page
         xhr.send();
