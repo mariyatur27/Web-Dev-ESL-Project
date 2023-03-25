@@ -1,9 +1,12 @@
-/*****************
+/*********************
  * Program Name: Ajax.js
  * Programmer name: Ali Rahbar
  * Date: March 25, 2023
  * What code does: This code controls the page changes using ajax
- *****************/
+ *********************/
+
+//Load page elements
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 
 //The object That controls the website content
 const websiteContent = 
@@ -28,11 +31,13 @@ const websiteContent =
             if (this.readyState === 4 && this.status === 200) 
             {
 
-            //Collect the main tag
-            var content = document.getElementById("PageContent");
+                //Collect the main tag
+                var content = document.getElementById("PageContent");
 
-            //Change the content
-            content.innerHTML = this.responseText;
+                //Change the content
+                content.innerHTML = this.responseText;
+
+            
             }
         };
 
@@ -266,6 +271,7 @@ function detectChanges(newHash)
         break;
 
     };
+
 };
 
 
@@ -283,7 +289,7 @@ window.addEventListener('hashchange', function(event)
     });
 
 
-    
+
 //When page is loaded for the first time
 
 //Get the new Hash
