@@ -65,6 +65,41 @@ h6 {
 .together{
   display: flex;
 }
+.primary-section{
+  margin: 2%;
+}
+.text-section h2 {
+  margin-top: 10%;
+}
+.text-section h5 {
+  margin-top: 2%;
+}
+section#services {
+  margin-top: 10%;
+}
+.tertiary-button {
+  margin-top: 5%;
+  padding: 1% 5%;
+  border-radius: 20px;
+  font-size: large;
+  border: 2px solid #008374;
+}
+.column {
+  width: 50%;
+}
+section#call-to-action {
+  margin-bottom: -7%;
+}
+.text-section {
+  padding: 4%;
+  background-color: #f6f6f6;
+  border-radius: 0% 10% 10% 0%;
+}
+.img-section img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10% 0% 0% 10%;
+}
 #ap-course-searchbar{
   width: 40%;
   padding: 0.7%;
