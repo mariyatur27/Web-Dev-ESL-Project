@@ -1,5 +1,56 @@
 [
     {
-        "name": "WCI Web Dev"
+        "name": "WCI Web Dev-1",
+        "description" : "Web development club",
+        "club_logo": "coming soon",
+        "meeting_time": "2:30 pm Tuesdays",
+        "meeting_place": "Room 400",
+        "google_classroom_code": "",
+        "student_leader_contacts": ["john_doe@thisisnotarealaddress.com", "jane_doe@alsonotarealaddress.com"]
+    },
+    {
+        "name": "My Totally Real Club",
+        "description" : "Wow this club is so awesome you should join it!!!",
+        "club_logo": "coming soon",
+        "meeting_time": "26:72 PM last week",
+        "meeting_place": "Room √-1",
+        "google_classroom_code": "aaaaaaa",
+        "student_leader_contacts": ["mkddwuhdwwiudf3f@no.com"]
+    },
+    {
+        "name": "Fight Club",
+        "description" : "The first rule of Fight Club is: you do not talk about Fight Club.",
+        "club_logo": "",
+        "meeting_time": "",
+        "meeting_place": "",
+        "google_classroom_code": "",
+        "student_leader_contacts": []
+    },
+    {
+        "name": "Rickrolling Club",
+        "description" : "Never gonna give you up, never gonna let you down...",
+        "club_logo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "meeting_time": "3:32",
+        "meeting_place": "",
+        "google_classroom_code": "dqw4w9w",
+        "student_leader_contacts": ["rick_astley@gmail.com"]
+    },
+    {
+        "name": "Random Keysmashing Club",
+        "description" : "diuhyfejfew3rh9ufh98fewj9cinucewiuewj8efw8jefw",
+        "club_logo": "dwnud3h897g65t6y7u8ioigvbnjklo",
+        "meeting_time": "d75rtyc",
+        "meeting_place": "i9p][ppewfdefw",
+        "google_classroom_code": "efwo;k;plof;lok;klo",
+        "student_leader_contacts": ["ahbsnoinojfen@gmail.com"]
+    },
+    {
+        "name": "CAPS LOCK CLUB",
+        "description" : "CAPS LOCK IS AWESOME!!! JOIN US TO DISCUSS WHY YOU SHOULD HAVE CAPS LOCK ON ALL THE TIME!!!",
+        "club_logo": "",
+        "meeting_time": "AA:AA EVERY TUESDAY",
+        "meeting_place": "ROOM AAA",
+        "google_classroom_code": "C4PSL0K",
+        "student_leader_contacts": ["ILOVESHOUTING@WRDSB.CA"]
     }
 ]

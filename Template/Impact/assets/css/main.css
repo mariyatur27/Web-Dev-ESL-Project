@@ -1229,6 +1229,15 @@ section {
   border-color: var(--color-primary);
 }
 
+#eng-exam_content_box{
+  max-width: 1000px;
+  height: 300px;
+  width: 80%;
+  background-color: rgb(190, 186, 186);
+  border-radius: 25px;
+  margin: auto;
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
