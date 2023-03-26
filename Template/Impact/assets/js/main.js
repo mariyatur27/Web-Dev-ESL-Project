@@ -398,3 +398,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+//The function will calculate the number of resources we have on our website.
+async function countResources() {
+  if(!dataFetched){
+      await fetchData();
+  }
+  
+  var club_count = clubs.length;
+  var ap_resources_count = ap_resources.length;
+  var english_examination_count = english_examination_resources.length;
+
+  document.getElementById('ele-1-count').setAttribute('data-purecounter-end', english_examination_count);
+  document.getElementById('ele-2-count').setAttribute('data-purecounter-end', club_count);
+  document.getElementById('ele-3-count').setAttribute('data-purecounter-end', ap_resources_count);
+
+}
