@@ -58,42 +58,6 @@ var clubs = [
     }
 ];
 
-//TO DO: Determine what information will be displayed for each AP resource
-var ap_resources = [
-    {
-        "name": "ap calc",
-        "course_code": "MCV4UIW",
-        "course_type": "Math",
-        "grade": "12",
-        "course_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas alias numquam accusantium placeat aut sit est dolores recusandae ea, perspiciatis repellat, rerum, sapiente cum molestiae reprehenderit? Placeat, perspiciatis eligendi.",
-        "prerequisits": ['gr 11 math ', 'gr 10 math']
-    },
-    {
-        "name": "ap chem",
-        "course_code": "SH4UIW",
-        "course_type": "Sciences",
-        "grade": "12",
-        "course_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas alias numquam accusantium placeat aut sit est dolores recusandae ea, perspiciatis repellat, rerum, sapiente cum molestiae reprehenderit? Placeat, perspiciatis eligendi.",
-        "prerequisits": ['gr 11 chem ', 'gr 10 sciences']
-    },
-    {
-        "name": "ap physics",
-        "course_code": "SPH4UIW",
-        "course_type": "Sciences",
-        "grade": "12",
-        "course_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas alias numquam accusantium placeat aut sit est dolores recusandae ea, perspiciatis repellat, rerum, sapiente cum molestiae reprehenderit? Placeat, perspiciatis eligendi.",
-        "prerequisits": ['gr 11 chem ', 'gr 10 sciences']
-    },
-    {
-        "name": "ap functions",
-        "course_code": "MF4UI",
-        "course_type": "Math",
-        "grade": "11",
-        "course_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas alias numquam accusantium placeat aut sit est dolores recusandae ea, perspiciatis repellat, rerum, sapiente cum molestiae reprehenderit? Placeat, perspiciatis eligendi.",
-        "prerequisits": ['gr 11 chem ', 'gr 10 sciences']
-    }
-];
-
 var ap_instructions = [
     {
         "type": "1",
@@ -205,4 +169,4 @@ async function fetchData() {
         console.log("done");
         }
     dataFetched = true;
-}
+    }
