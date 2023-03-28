@@ -16,7 +16,7 @@ async function buildClubBlocks() {
         header.appendChild(club_name);
       container.appendChild(header);
       let body = document.createElement('div');
-        let club_description = document.createElement('p'); club_description.innerHTML = "About: ".concat(info.description);
+        let club_description = document.createElement('h6'); club_description.innerHTML = "About: ".concat(info.description);
         body.appendChild(club_description);
         let club_meeting_time = document.createElement('h6'); club_meeting_time.innerHTML = "Meeting Time: ".concat(info.meeting_time);
         body.appendChild(club_meeting_time);

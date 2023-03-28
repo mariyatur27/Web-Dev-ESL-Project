@@ -80,6 +80,23 @@ section#services {
 .hide{
   display: none;
 }
+.club-containers {
+  flex: 0 0 31%;
+  margin: 1%;
+  border: solid 2px #008374;
+  padding: 1%;
+}
+div#clubs-content-2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+div#clubs-content-1 {
+  width: 30%;
+}
+.club-container{
+  display: flex;
+}
 .tertiary-button {
   margin-top: 5%;
   padding: 1% 5%;
