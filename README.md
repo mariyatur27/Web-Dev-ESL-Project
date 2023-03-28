@@ -13,11 +13,14 @@ In a few moments, I will be adding a big template which we will use to work on t
 
 week 1:
 - Finish the json 
-- Fix the UI for one box(content)
+- Fix the UI for one box (content)
 
 week 2: 
-- add the json to the html
-- Fix the UI for one box(functionality)
+- add the json to the html(normal text)
+- Fix the UI for one box
+
+week 3: 
+- Add the json content to the boxes
 
 # AP Resources / Club team
 

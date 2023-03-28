@@ -147,6 +147,7 @@ var english_examination_resources = [
     "name": "Main Website for IELTS Test",
     "category": "English Proficiency Test resources",
     "description": "The main website for IELTS in Canada, resources on the description of IELTS, practice tests, test fees, and test bookings can be found here",
+    "score": "Different for each university, check their website for specific scores. Usually 6.5 overall score.",
     "tip": "If you have not been in a Canadian educational institution for more than four years, consider taking one of the tests below as they are requisite for universities/colleges. ESL years are sometimes NOT considered to be one of the four years(For example, University of Waterloo), make sure you contact your post-secondary institutions to make sure.(Can be put on the website if you guys want to add some clarification).",
     "link": "https://www.google.com/search?q=ielts&rlz=1C1VDKB_zh-CNCA986CA987&oq=IELTS&aqs=chrome.0.0i271j69i57j0i131i433i457i512j0i402l2j69i65j69i60l2.2945j0j4&sourceid=chrome&ie=UTF-8",
     "practice": "https://www.ielts.org/usa/ielts-practice-test"
@@ -155,6 +156,7 @@ var english_examination_resources = [
     "name": "Main website for TOEFL test",
     "category": "English Proficiency Test resources",
     "description": "The leading website for TOEFL in Canada, resources on the description of TOEFL, practice tests, test fees, test bookings can be found here.",
+    "score": "Different for each university, check their website for specific scores. Usually 85+ overall score.",
     "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
     "link": "hhttps://www.ets.org/toefl.html",
     "practice": "https://www.ets.org/toefl/test-takers/ibt/prepare/practice-tests.html"
@@ -163,6 +165,7 @@ var english_examination_resources = [
     "name": "Main website for CAEL",
     "category": "English Proficiency Test resources",
     "description": "The main website for CAEL in Canada, resources on the description of CAEL, practice tests, test fees, and test bookings can be found here",
+    "score": "Different for each university, check their website for specific scores. Usually 60+ overall score.",
     "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
     "link": "http://www.cael.ca/",
     "practice": "https://www.cael.ca/prepare-for-cael/free-resources/"
@@ -171,6 +174,7 @@ var english_examination_resources = [
     "name": "Main website for the Duolingo English Test",
     "category": "English Proficiency Test resources",
     "description": "The main website for the Duolingo English Test in Canada, resources on the description of the Duolingo English Test, practice tests, test fees, and test bookings can be found here",
+    "score": "Different for each university, check their website for specific scores. Usually 115+ overall score.",
     "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
     "link": "http://www.cael.ca/",
     "practice": "https://englishtest.duolingo.com/readiness"
@@ -179,6 +183,7 @@ var english_examination_resources = [
     "name": "Main website for the Cambridge English Test",
     "category": "English Proficiency Test resources",
     "description": "The main website for the Cambridge English Test in Canada, resources on the description of the Cambridge English Test, practice tests, test fees, and test bookings can be found here",
+    "score": "Different for each university, check their website for specific scores. Usually 176+ overall score.",
     "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
     "link": "http://www.cael.ca/",
     "practice": "https://www.cambridgeenglish.org/exams-and-tests/advanced/preparation/"
