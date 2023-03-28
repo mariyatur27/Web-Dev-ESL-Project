@@ -164,7 +164,7 @@ var english_examination_resources = [
     "category": "English Proficiency Test resources",
     "description": "The main website for CAEL in Canada, resources on the description of CAEL, practice tests, test fees, and test bookings can be found here",
     "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
-    "link": "http://www.cael.ca/"
+    "link": "http://www.cael.ca/",
     "practice": "https://www.cael.ca/prepare-for-cael/free-resources/"
   },
   {
@@ -172,7 +172,7 @@ var english_examination_resources = [
     "category": "English Proficiency Test resources",
     "description": "The main website for the Duolingo English Test in Canada, resources on the description of the Duolingo English Test, practice tests, test fees, and test bookings can be found here",
     "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
-    "link": "http://www.cael.ca/"
+    "link": "http://www.cael.ca/",
     "practice": "https://englishtest.duolingo.com/readiness"
   },
   {
@@ -180,7 +180,7 @@ var english_examination_resources = [
     "category": "English Proficiency Test resources",
     "description": "The main website for the Cambridge English Test in Canada, resources on the description of the Cambridge English Test, practice tests, test fees, and test bookings can be found here",
     "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem modi sunt repellat quo corrupti reiciendis et deserunt in beatae nesciunt blanditiis cumque, ex quia sint ullam natus odit. Animi",
-    "link": "http://www.cael.ca/"
+    "link": "http://www.cael.ca/",
     "practice": "https://www.cambridgeenglish.org/exams-and-tests/advanced/preparation/"
   }
 ];
