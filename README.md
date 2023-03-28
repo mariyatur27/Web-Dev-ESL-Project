@@ -29,3 +29,7 @@ week 1 tasks:
 - Add club boxes UI to the page using (create JS code and loop through the array of objects, database)
 - For the clubs searchbar, create an output for when the search is not found
 - Think of what possible filters can be added to the clubs page
+
+
+week 2 tasks:
+- Find a way to embed google translate into pages
