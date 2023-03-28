@@ -7,7 +7,9 @@ async function buildEnglishResourcesBlocks() {
     let section = document.getElementById('english-examination-resources-content');
 
     for(const info of english_examination_resources){
-        console.log(info.name)
-    }
+        const resource = document.createElement("h1")
+        resource.innerHTML = info.name
 
+        section.appendChild(resource)
+    }
 }

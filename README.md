@@ -33,3 +33,9 @@ week 1 tasks:
 
 week 2 tasks:
 - Find a way to embed google translate into pages
+- Incoporate the club's search bar with the club boxes
+- Fix Mariya's AP Resources search bar
+- Write content for our database (any database works)
+- Work on the FAQ
+- Connect all buttons to their appropriate pages
+- Copy all HTML file contents into the Template folder

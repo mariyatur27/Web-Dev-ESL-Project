@@ -4,6 +4,7 @@
 var clubs = [
     {
         "name": "WCI Web Dev-1",
+        "id": 'club-1',
         "description" : "Web development club",
         "club_logo": "coming soon",
         "meeting_time": "2:30 pm Tuesdays",
@@ -12,7 +13,8 @@ var clubs = [
         "student_leader_contacts": ["john_doe@thisisnotarealaddress.com", "jane_doe@alsonotarealaddress.com"]
     },
     {
-        "name": "My Totally Real Club",
+        "name": "Astronomy",
+        "id": 'club-2',
         "description" : "Wow this club is so awesome you should join it!!!",
         "club_logo": "coming soon",
         "meeting_time": "26:72 PM last week",
@@ -22,6 +24,7 @@ var clubs = [
     },
     {
         "name": "Fight Club",
+        "id": 'club-3',
         "description" : "The first rule of Fight Club is: you do not talk about Fight Club.",
         "club_logo": "",
         "meeting_time": "",
@@ -31,6 +34,7 @@ var clubs = [
     },
     {
         "name": "Rickrolling Club",
+        "id": 'club-4',
         "description" : "Never gonna give you up, never gonna let you down...",
         "club_logo": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "meeting_time": "3:32",
@@ -40,6 +44,7 @@ var clubs = [
     },
     {
         "name": "Random Keysmashing Club",
+        "id": 'club-5',
         "description" : "diuhyfejfew3rh9ufh98fewj9cinucewiuewj8efw8jefw",
         "club_logo": "dwnud3h897g65t6y7u8ioigvbnjklo",
         "meeting_time": "d75rtyc",
@@ -49,6 +54,7 @@ var clubs = [
     },
     {
         "name": "CAPS LOCK CLUB",
+        "id": 'club-6',
         "description" : "CAPS LOCK IS AWESOME!!! JOIN US TO DISCUSS WHY YOU SHOULD HAVE CAPS LOCK ON ALL THE TIME!!!",
         "club_logo": "",
         "meeting_time": "AA:AA EVERY TUESDAY",
@@ -157,9 +163,8 @@ var english_examination_resources = [
 //Conneting to the JSON databases to get data from them
 var dataFetched = false;
 
-async function fetchData() 
-{
-    console.log(window.location.protocol)
+async function fetchData() {
+    // console.log(window.location.protocol)
     // if (window.location.protocol == "file:") {
     //     dataFetched = true;
     // } else {
@@ -170,4 +175,4 @@ async function fetchData()
     //     console.log("done");
     //     }
     // dataFetched = true;
-}
+    }
