@@ -1,0 +1,55 @@
+<section class="main-content-area">
+    <div class="text-container">
+      <h4>Advanced Placement (AP) Program</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet pellentesque sapien sit amet lobortis. In non malesuada eros. In vulputate nulla eros, eu bibendum mauris laoreet sit amet. Suspendisse ut mauris sagittis, mattis sem eget, convallis quam.</p>
+    </div>
+  </section>
+
+  <section class="main-content-area" style="margin-top: -5%;">
+    <div class="text-container">
+      <label for="student-type">I am currently</label>
+      <select name="student-type" id="student-type">
+        <option value="1">English As A Second Language (ESL)</option>
+        <option value="2">Multilingual Learner (MML)</option>
+        <option value="3">Education Development (EDL)</option>
+        <option value="4">Academic</option>
+        <option value="5">Applied</option>
+      </select>
+      <button id="search-instructions" onclick="showInstructions()" class="primary-btn">Explore</button>
+    </div>
+    <div id="instructions-container"></div>
+  </section>
+
+  <section class="main-content-area">
+    <div id="user-interactive-area">
+        <div class="centered">
+          <h4>Check out how you can get enrolled in AP at WCI!</h4>
+        </div>
+        <div class="centered" style="margin-top:3%">
+          <input type="text" id="ap-course-searchbar" placeholder="Find an AP course..." autocomplete="off" oninput="outputResults(this.value)" onfocus="outputResults(this.value)" >
+          <button id="submit-ap-search" class="secondary-btn">Search</button>
+        </div>
+        <div class="centered">
+          <ul id="results-list">
+
+          </ul>
+        </div>
+        <div class="centered">
+          <div class="prerequisits" id="prerequisits-box"></div>
+        </div>
+    </div>
+  </section>
+
+  <section class="main-content-area">
+    <div class="centered">
+      <h4>Find out more about AP courses offered at WCI</h4>
+    </div>
+    <div id="ap-resources-content"></div>
+    <div class="centered">
+      <a style="text-decoration: underline;">Show More</a>
+    </div>
+  </section>
+
+  <!-- Javascript  -->
+  <script src="assets/js/ap_resources.js"></script>
+  <script>buildApResourcesBlocks();</script>
