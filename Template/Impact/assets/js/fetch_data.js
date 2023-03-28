@@ -157,16 +157,17 @@ var english_examination_resources = [
 //Conneting to the JSON databases to get data from them
 var dataFetched = false;
 
-async function fetchData() {
+async function fetchData() 
+{
     console.log(window.location.protocol)
-    if (window.location.protocol == "file:") {
-        dataFetched = true;
-    } else {
-        console.log("Starting to load the data");
-        clubs = await (await fetch("assets/data/clubs.json")).json();
-        ap_resources = await (await fetch("assets/data/ap_resources.json")).json();
-        english_examination_resources = await (await fetch("assets/data/english_examination_resources.json")).json();
-        console.log("done");
-        }
-    dataFetched = true;
-    }
+    // if (window.location.protocol == "file:") {
+    //     dataFetched = true;
+    // } else {
+    //     console.log("Starting to load the data");
+    //     clubs = await (await fetch("assets/data/clubs.json")).json();
+    //     ap_resources = await (await fetch("assets/data/ap_resources.json")).json();
+    //     english_examination_resources = await (await fetch("assets/data/english_examination_resources.json")).json();
+    //     console.log("done");
+    //     }
+    // dataFetched = true;
+}
