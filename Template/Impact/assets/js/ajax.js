@@ -212,7 +212,7 @@ const websiteContent =
         };
 
         //Open the html
-        xhr.open('GET', 'assets/templates/advancedPlacemnet/advancedPlacement.html', true); //ToDo
+        xhr.open('GET', 'assets/templates/advancedPlacement/advancedPlacement.html', true); //ToDo
 
         //Submit the page
         xhr.send();
