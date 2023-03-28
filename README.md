@@ -13,11 +13,14 @@ In a few moments, I will be adding a big template which we will use to work on t
 
 week 1:
 - Finish the json 
-- Fix the UI for one box(content)
+- Fix the UI for one box (content)
 
 week 2: 
-- add the json to the html
-- Fix the UI for one box(functionality)
+- add the json to the html(normal text)
+- Fix the UI for one box
+
+week 3: 
+- Add the json content to the boxes
 
 # AP Resources / Club team
 
@@ -26,3 +29,7 @@ week 1 tasks:
 - Add club boxes UI to the page using (create JS code and loop through the array of objects, database)
 - For the clubs searchbar, create an output for when the search is not found
 - Think of what possible filters can be added to the clubs page
+
+
+week 2 tasks:
+- Find a way to embed google translate into pages
