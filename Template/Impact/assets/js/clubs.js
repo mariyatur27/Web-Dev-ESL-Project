@@ -7,8 +7,7 @@ async function buildClubBlocks() {
   let section = document.getElementById('clubs-content-2');
 
   for (const info of clubs) {
-    console.log(info)
-    let container = document.createElement('div'); container.classList.add('club-containers');
+    let container = document.createElement('div'); container.classList.add('club-containers'); container.id=info.id;
       let header = document.createElement('div'); header.classList.add('club-header');
       //we will uncomment this when we have actual photos...
       //let club_logo = document.createElement('img'); club_logo.src = info.club_logo;
@@ -53,6 +52,23 @@ function searchClubs() {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
+    }
+  }
+}
+
+async function checkMenu(input){
+  if (!dataFetched) {
+    await fetchData();
+  }
+
+  var link = input.innerHTML;
+  for (const info of clubs){
+    if (info.name == link){
+      var boxes = document.getElementsByClassName('club-containers');
+      for(var i = 0; i < boxes.length; i++){
+        boxes[i].classList.toggle('hide');
+        document.getElementById(info.id).style.display='block';
+      }
     }
   }
 }
