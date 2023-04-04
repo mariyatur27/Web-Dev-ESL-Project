@@ -52,12 +52,17 @@ async function buildClubButtons() {
         var name = obj.name;
         var boxes = document.getElementsByClassName('club-containers');
         for(var i = 0; i < boxes.length; i++){
-          //document.getElementById(boxes[i].id).classList.toggle('hide');
           document.getElementById(boxes[i].id).style.display='none'
           if(boxes[i].id.slice(-6) == obj.id){
-            //document.getElementById(boxes[i].id).classList.toggle('hide');
             document.getElementById(boxes[i].id).style.display='block'
           }
+        }
+      })
+
+      document.getElementById('all-btn').addEventListener('click', function() {
+        var boxes = document.getElementsByClassName('club-containers');
+        for(var i = 0; i < boxes.length; i++){
+          document.getElementById(boxes[i].id).style.display='block'
         }
       })
   }

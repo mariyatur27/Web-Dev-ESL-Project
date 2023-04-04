@@ -86,6 +86,15 @@ section#services {
   border: solid 2px #008374;
   padding: 1%;
 }
+.menu-button , .menu-button-2{
+  text-decoration: underline;
+  color: #008374;
+  font-weight: 600;
+}
+.menu-button:hover, .menu-button-2:hover {
+  cursor: pointer;
+  font-size: larger;
+} 
 div#clubs-content-2 {
   display: flex;
   flex-wrap: wrap;
