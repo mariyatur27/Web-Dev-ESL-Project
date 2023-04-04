@@ -35,7 +35,22 @@ async function buildClubBlocks() {
       container.appendChild(body);
     section.appendChild(container);
   }
+}
 
+async function buildClubButtons() {
+  if(!dataFetched) {
+    await fetchData();
+  }
+
+  let section = document.getElementById('wciClubs');
+
+  for(const obj of clubs){
+    let link = document.createElement('a'); link.href='#';
+      let item = document.createElement('li'); item.classList.add('menu-button'); item.onclick = checkMenu(this);
+      item.innerHTML = obj.name;
+      link.appendChild(item);
+    section.appendChild(link);
+  }
 }
 
 // Clubs search bar
