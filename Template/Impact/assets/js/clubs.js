@@ -11,7 +11,7 @@ async function buildClubBlocks() {
       let header = document.createElement('div'); header.classList.add('club-header');
       //we will uncomment this when we have actual photos...
       //let club_logo = document.createElement('img'); club_logo.src = info.club_logo;
-        let club_name = document.createElement('h4'); club_name.innerHTML = info.name;
+        let club_name = document.createElement('h4'); club_name.innerHTML = info.name; club_name.id=info.id.concat("-title"); club_name.classList.add('box-title');
         header.appendChild(club_name);
       container.appendChild(header);
       let body = document.createElement('div');
@@ -49,7 +49,16 @@ async function buildClubButtons() {
       section.appendChild(item);
 
       document.getElementById(obj.id.concat("-link")).addEventListener('click', function() {
-        console.log(obj.name)
+        var name = obj.name;
+        var boxes = document.getElementsByClassName('club-containers');
+        for(var i = 0; i < boxes.length; i++){
+          //document.getElementById(boxes[i].id).classList.toggle('hide');
+          document.getElementById(boxes[i].id).style.display='none'
+          if(boxes[i].id.slice(-6) == obj.id){
+            //document.getElementById(boxes[i].id).classList.toggle('hide');
+            document.getElementById(boxes[i].id).style.display='block'
+          }
+        }
       })
   }
 }
@@ -70,10 +79,6 @@ function searchClubs() {
       li[i].style.display = "none";
     }
   }
-}
-
-function checkMenu(input){
-  console.log(input)
 }
 
 // async function checkMenu(input){
