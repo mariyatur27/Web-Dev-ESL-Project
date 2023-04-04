@@ -45,11 +45,12 @@ async function buildClubButtons() {
   let section = document.getElementById('wciClubs');
 
   for(const obj of clubs){
-    let link = document.createElement('a'); link.href='#';
-      let item = document.createElement('li'); item.classList.add('menu-button'); item.onclick = checkMenu(this);
-      item.innerHTML = obj.name;
-      link.appendChild(item);
-    section.appendChild(link);
+      let item = document.createElement('li'); item.classList.add('menu-button'); item.innerHTML = obj.name; item.id = obj.id.concat("-link");
+      section.appendChild(item);
+
+      document.getElementById(obj.id.concat("-link")).addEventListener('click', function() {
+        console.log(obj.name)
+      })
   }
 }
 
@@ -71,19 +72,23 @@ function searchClubs() {
   }
 }
 
-async function checkMenu(input){
-  if (!dataFetched) {
-    await fetchData();
-  }
-
-  var link = input.innerHTML;
-  for (const info of clubs){
-    if (info.name == link){
-      var boxes = document.getElementsByClassName('club-containers');
-      for(var i = 0; i < boxes.length; i++){
-        boxes[i].classList.toggle('hide');
-        document.getElementById(info.id).style.display='block';
-      }
-    }
-  }
+function checkMenu(input){
+  console.log(input)
 }
+
+// async function checkMenu(input){
+//   if (!dataFetched) {
+//     await fetchData();
+//   }
+
+//   var link = input.innerHTML;
+//   for (const info of clubs){
+//     if (info.name == link){
+//       var boxes = document.getElementsByClassName('club-containers');
+//       for(var i = 0; i < boxes.length; i++){
+//         boxes[i].classList.toggle('hide');
+//         document.getElementById(info.id).style.display='block';
+//       }
+//     }
+//   }
+// }
