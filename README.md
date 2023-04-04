@@ -16,6 +16,7 @@ week 1:
 - Fix the UI for one box (content)
 
 week 2: 
+
 - add the json to the html(normal text)
 - Fix the UI for one box
 
@@ -39,3 +40,5 @@ week 2 tasks:
 - Work on the FAQ
 - Connect all buttons to their appropriate pages
 - Copy all HTML file contents into the Template folder
+
+test text
