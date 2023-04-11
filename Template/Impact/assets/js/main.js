@@ -407,7 +407,7 @@ async function countResources() {
   }
   
   var club_count = clubs.length;
-  var ap_resources_count = ap_resources.length;
+  var ap_resources_count = ap_instructions.length;
   var english_examination_count = english_examination_resources.length;
 
   document.getElementById('ele-1-count').setAttribute('data-purecounter-end', english_examination_count);
