@@ -6,10 +6,35 @@ async function buildEnglishResourcesBlocks() {
 
     let section = document.getElementById('english-examination-resources-content');
 
-    for(const info of english_examination_resources){
-        const resource = document.createElement("h1")
-        resource.innerHTML = info.name
+    console.log(english_examination_resources);
 
-        section.appendChild(resource)
+    for(const info of english_examination_resources){
+
+        const content_box = document.createElement("div");
+        content_box.classList.add("eng-exam-content-box");
+
+        const resource = document.createElement("h1");
+        resource.innerHTML = info.name;
+        resource.classList.add("eng-exam-content-box-title");
+        content_box.appendChild(resource);
+
+        const text = document.createElement("p");
+        text.classList.add("eng-exam-content-box-text");
+        text.innerHTML = info.description + info.score + info.tip;
+        content_box.appendChild(text);
+
+        const link = document.createElement("button");
+        link.onclick = () => { window.location = info.link };
+        link.classList.add("eng-exam-content-box-button");
+        link.innerHTML = "Link";
+        content_box.appendChild(link);
+
+        const practice = document.createElement("button");
+        practice.onclick = () => { window.location = info.practice };
+        practice.classList.add("eng-exam-content-box-button");
+        practice.innerHTML = "Practice";
+        content_box.appendChild(practice);
+
+        section.appendChild(content_box);
     }
 }
