@@ -41,4 +41,10 @@ week 2 tasks:
 - Connect all buttons to their appropriate pages
 - Copy all HTML file contents into the Template folder
 
-test text
+Week 3:
+    Home Page:
+    - Link button blocks with some text description :
+        - For Volunteering 
+        - For Community Events
+        - Refugee Resources
+    - Add contacts of the settlement workers 

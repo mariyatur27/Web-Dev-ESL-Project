@@ -11,7 +11,7 @@ async function buildClubBlocks() {
       let header = document.createElement('div'); header.classList.add('club-header');
       //we will uncomment this when we have actual photos...
       //let club_logo = document.createElement('img'); club_logo.src = info.club_logo;
-        let club_name = document.createElement('h4'); club_name.innerHTML = info.name;
+        let club_name = document.createElement('h4'); club_name.innerHTML = info.name; club_name.id=info.id.concat("-title"); club_name.classList.add('box-title');
         header.appendChild(club_name);
       container.appendChild(header);
       let body = document.createElement('div');
@@ -45,11 +45,26 @@ async function buildClubButtons() {
   let section = document.getElementById('wciClubs');
 
   for(const obj of clubs){
-    let link = document.createElement('a'); link.href='#';
-      let item = document.createElement('li'); item.classList.add('menu-button'); item.onclick = checkMenu(this);
-      item.innerHTML = obj.name;
-      link.appendChild(item);
-    section.appendChild(link);
+      let item = document.createElement('li'); item.classList.add('menu-button'); item.innerHTML = obj.name; item.id = obj.id.concat("-link");
+      section.appendChild(item);
+
+      document.getElementById(obj.id.concat("-link")).addEventListener('click', function() {
+        var name = obj.name;
+        var boxes = document.getElementsByClassName('club-containers');
+        for(var i = 0; i < boxes.length; i++){
+          document.getElementById(boxes[i].id).style.display='none'
+          if(boxes[i].id.slice(-6) == obj.id){
+            document.getElementById(boxes[i].id).style.display='block'
+          }
+        }
+      })
+
+      document.getElementById('all-btn').addEventListener('click', function() {
+        var boxes = document.getElementsByClassName('club-containers');
+        for(var i = 0; i < boxes.length; i++){
+          document.getElementById(boxes[i].id).style.display='block'
+        }
+      })
   }
 }
 
@@ -71,19 +86,19 @@ function searchClubs() {
   }
 }
 
-async function checkMenu(input){
-  if (!dataFetched) {
-    await fetchData();
-  }
+// async function checkMenu(input){
+//   if (!dataFetched) {
+//     await fetchData();
+//   }
 
-  var link = input.innerHTML;
-  for (const info of clubs){
-    if (info.name == link){
-      var boxes = document.getElementsByClassName('club-containers');
-      for(var i = 0; i < boxes.length; i++){
-        boxes[i].classList.toggle('hide');
-        document.getElementById(info.id).style.display='block';
-      }
-    }
-  }
-}
+//   var link = input.innerHTML;
+//   for (const info of clubs){
+//     if (info.name == link){
+//       var boxes = document.getElementsByClassName('club-containers');
+//       for(var i = 0; i < boxes.length; i++){
+//         boxes[i].classList.toggle('hide');
+//         document.getElementById(info.id).style.display='block';
+//       }
+//     }
+//   }
+// }

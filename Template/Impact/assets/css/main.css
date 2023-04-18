@@ -86,6 +86,16 @@ section#services {
   border: solid 2px #008374;
   padding: 1%;
 }
+
+.menu-button , .menu-button-2{
+  text-decoration: underline;
+  color: #008374;
+  font-weight: 600;
+}
+.menu-button:hover, .menu-button-2:hover {
+  cursor: pointer;
+  font-size: larger;
+} 
 div#clubs-content-2 {
   display: flex;
   flex-wrap: wrap;
@@ -1294,13 +1304,28 @@ section {
   border-color: var(--color-primary);
 }
 
-#eng-exam_content_box{
+.eng-exam-content-box{
   max-width: 1000px;
-  height: 300px;
   width: 80%;
-  background-color: rgb(190, 186, 186);
+  background-color: rgb(236, 225, 225);
   border-radius: 25px;
   margin: auto;
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+.eng-exam-content-box-text{
+  margin: 10px 0  10px;
+}
+
+.eng-exam-content-box-button{
+  font-size: 18px;
+  border-radius: 10px;
+  width: 130px;
+  height: 45px;
+  margin-right: 20px;
+  background-color: rgb(206, 189, 189);
+  border: none;
 }
 
 /*--------------------------------------------------------------
