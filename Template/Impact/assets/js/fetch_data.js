@@ -64,6 +64,30 @@ var clubs = [
     }
 ];
 
+var ap_resources = [
+    {
+        "name": "Chemistry",
+        "course-code": "SCH4UW",
+        "course-description": "Lorem ipsum dolor sit amet,",
+        "grade": "12",
+        "course_type": "Science"
+    },
+    {
+        "name": "Physics",
+        "course-code": "SPH4UW",
+        "course-description": "Lorem ipsum dolor sit amet,",
+        "grade": "12",
+        "course_type": "Science"
+    },
+    {
+        "name": "Biology",
+        "course-code": "SBI4UW",
+        "course-description": "Lorem ipsum dolor sit amet,",
+        "grade": "12",
+        "course_type": "Science"
+    }
+];
+
 var ap_instructions = [
     {
         "type": "1",
