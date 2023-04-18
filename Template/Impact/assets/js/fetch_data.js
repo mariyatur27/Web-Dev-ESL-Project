@@ -66,25 +66,60 @@ var clubs = [
 
 var ap_resources = [
     {
+        "name": "Physics",
+        "course_code": "SPH3UW",
+        "course_description": "Lorem ipsum dolor sit amet",
+        "grade": "11",
+        "course_type": "Science",
+        "presrequisits": ["SNC2D"]
+    },
+    {
         "name": "Chemistry",
-        "course-code": "SCH4UW",
-        "course-description": "Lorem ipsum dolor sit amet,",
+        "course_code": "SCH4UW",
+        "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
-        "course_type": "Science"
+        "course_type": "Science",
+        "presrequisits": ["SCH3U"]
     },
     {
         "name": "Physics",
-        "course-code": "SPH4UW",
-        "course-description": "Lorem ipsum dolor sit amet,",
+        "course_code": "SPH4UW",
+        "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
-        "course_type": "Science"
+        "course_type": "Science",
+        "presrequisits": ["SPH3U"]
     },
     {
         "name": "Biology",
-        "course-code": "SBI4UW",
-        "course-description": "Lorem ipsum dolor sit amet,",
+        "course_code": "SBI4UW",
+        "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
-        "course_type": "Science"
+        "course_type": "Science",
+        "presrequisits": ["SBI3U"]
+    },
+    {
+        "name": "English",
+        "course_code": "ENG4UW",
+        "course_description": "Lorem ipsum dolor sit amet",
+        "grade": "12",
+        "course_type": "English",
+        "presrequisits": ["ENG3U/NBE3U"]
+    },
+    {
+        "name": "French",
+        "course_code": "FEF/FSF4UW",
+        "course_description": "Lorem ipsum dolor sit amet",
+        "grade": "12",
+        "course_type": "French as a Second Language",
+        "presrequisits": ["FEF3U"]
+    },
+    {
+        "name": "Calculus AB/BC",
+        "course_code": "MHF4UW/MCV4UW",
+        "course_description": "Lorem ipsum dolor sit amet",
+        "grade": "12",
+        "course_type": "Mathematics",
+        "presrequisits": ["MCR3U"]
     }
 ];
 
