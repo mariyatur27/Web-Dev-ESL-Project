@@ -66,60 +66,67 @@ var clubs = [
 
 var ap_resources = [
     {
-        "name": "Physics",
+        "id": "ap-1",
+        "name": "Physics (11)",
         "course_code": "SPH3UW",
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "11",
         "course_type": "Science",
-        "presrequisits": ["SNC2D"]
+        "prerequisits": ["SNC2D"]
     },
     {
+        "id": "ap-2",
+        "name": "Physics (12)",
+        "course_code": "SPH4UW",
+        "course_description": "Lorem ipsum dolor sit amet",
+        "grade": "12",
+        "course_type": "Science",
+        "prerequisits": ["SPH3U"]
+    },
+    {
+        "id": "ap-3",
         "name": "Chemistry",
         "course_code": "SCH4UW",
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "Science",
-        "presrequisits": ["SCH3U"]
+        "prerequisits": ["SCH3U"]
     },
     {
-        "name": "Physics",
-        "course_code": "SPH4UW",
-        "course_description": "Lorem ipsum dolor sit amet",
-        "grade": "12",
-        "course_type": "Science",
-        "presrequisits": ["SPH3U"]
-    },
-    {
+        "id": "ap-4",
         "name": "Biology",
         "course_code": "SBI4UW",
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "Science",
-        "presrequisits": ["SBI3U"]
+        "prerequisits": ["SBI3U"]
     },
     {
+        "id": "ap-5",
         "name": "English",
         "course_code": "ENG4UW",
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "English",
-        "presrequisits": ["ENG3U/NBE3U"]
+        "prerequisits": ["ENG3U/NBE3U"]
     },
     {
+        "id": "ap-6",
         "name": "French",
         "course_code": "FEF/FSF4UW",
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "French as a Second Language",
-        "presrequisits": ["FEF3U"]
+        "prerequisits": ["FEF3U"]
     },
     {
+        "id": "ap-7",
         "name": "Calculus AB/BC",
         "course_code": "MHF4UW/MCV4UW",
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "Mathematics",
-        "presrequisits": ["MCR3U"]
+        "prerequisits": ["MCR3U"]
     }
 ];
 

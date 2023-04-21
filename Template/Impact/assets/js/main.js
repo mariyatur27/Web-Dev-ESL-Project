@@ -13,7 +13,6 @@ async function outputResults(value){
     await fetchData();
   }
   //clearSearch();
-
   if (value && value.trim().length > 0){
     value = value.trim().toLowerCase();
     displayResults(value)
@@ -39,30 +38,33 @@ function clearSearch() {
 }
 
 function displayResults(value){
-  var results = document.getElementById('results-list');
+  var results = document.getElementById('results-list'); results.innerHTML = "";
   for(const info of ap_resources){
-    if (info.name == value){
+    if (info.name.trim().toLowerCase().indexOf(value) == 0){
       results.style.opacity = '1';
-      let result_ele = document.createElement('li'); result_ele.classList.add('search-bar-result-ele'); result_ele.innerHTML = value;
-      result_ele.addEventListener('click', function(){
-        displayPrerequisits(value);
-        results.style.display = 'none';
-      });
-      results.appendChild(result_ele);
+      if (document.getElementById(info.id) === null) {
+        let result_ele = document.createElement('li'); result_ele.classList.add('search-bar-result-ele'); result_ele.id = info.id; result_ele.innerHTML = info.name;
+        result_ele.addEventListener('click', function(){
+          displayPrerequisits(info.name.trim().toLowerCase());
+          results.style.opacity = '0';
+        });
+        results.appendChild(result_ele);
+      }
     }
   }
 }
 
 function displayPrerequisits(value){
+  document.getElementById('prerequisits-box').innerHTML = "";
   for(const info of ap_resources){
-    if(info.name == value){
+    if(info.name.trim().toLowerCase() == value){
       var box = document.getElementById('prerequisits-box');
       box.style.opacity = '1';
-      var title_1 = document.createElement('h5'); title_1.innerHTML = "Course Description for " + value + ":";
+      var title_1 = document.createElement('h5'); title_1.innerHTML = "Course Description for " + info.name + ":";
       box.appendChild(title_1);
       var course_dscr = document.createElement('p'); course_dscr.innerHTML = info.course_description;
       box.appendChild(course_dscr);
-      var title_2 = document.createElement('h5'); title_2.innerHTML = "Prerequisits for " + value + ":";
+      var title_2 = document.createElement('h5'); title_2.innerHTML = "Prerequisits for " + info.name + ":";
       box.appendChild(title_2);
       var list = document.createElement('ul');
       box.appendChild(list);

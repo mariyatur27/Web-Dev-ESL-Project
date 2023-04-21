@@ -167,16 +167,20 @@ section#call-to-action {
   background: #008374;
 }
 #results-list{
-    opacity: 0;
-    list-style: none;
-    box-shadow: 1px 6px 15px -6px rgb(0 0 0 / 10%);
-    width: 38%;
-    margin-left: -7.4%;
-    border-radius: 30px;
-    padding: 0.5%;
-    padding-left: 2%;
+  opacity: 0;
+  list-style: none;
+  box-shadow: 1px 6px 15px -6px rgb(0 0 0 / 10%);
+  width: 38%;
+  margin-left: -7.4%;
+  border-radius: 30px;
+  padding: 0.5% 0.5% 0;
 }
-#results-list:hover{
+.search-bar-result-ele {
+  width: 100%;
+  border-radius: 30px;
+  padding: 0.5% 0.5% 0 5%;
+}
+.search-bar-result-ele:hover{
   cursor: pointer;
   background: #d7d6d6;
   transition-duration: 1s;
