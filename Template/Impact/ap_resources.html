@@ -172,32 +172,18 @@
   </section>
 
   <section class="main-content-area">
-    <div id="user-interactive-area">
-        <div class="centered">
-          <h4>Check out how you can get enrolled in AP at WCI!</h4>
-        </div>
-        <div class="centered" style="margin-top:3%">
-          <input type="text" id="ap-course-searchbar" placeholder="Find an AP course..." autocomplete="off" oninput="outputResults(this.value)" onfocus="outputResults(this.value)" >
-          <button id="submit-ap-search" class="secondary-btn">Search</button>
-        </div>
-        <div class="centered">
-          <ul id="results-list">
-
-          </ul>
-        </div>
-        <div class="centered">
-          <div class="prerequisits" id="prerequisits-box"></div>
-        </div>
-    </div>
-  </section>
-
-  <section class="main-content-area">
     <div class="centered">
       <h4>Find out more about AP courses offered at WCI</h4>
     </div>
+    <div class="centered">
+      <input type="text" id="ap-course-searchbar" placeholder="Find an AP course..." autocomplete="off" oninput="outputSearch(this.value)" >
+    </div>
+    <div class="centered">
+      <h6 id="warning-message-2">Sorry, this course was not found. Please try again!</h6>
+    </div>
     <div id="ap-resources-content"></div>
     <div class="centered">
-      <a style="text-decoration: underline;">Show More</a>
+      <a style="text-decoration: underline;" id="show-more-btn">Show More</a>
     </div>
   </section>
   <!-- End of Club section -->

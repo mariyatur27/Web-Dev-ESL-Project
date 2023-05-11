@@ -8,50 +8,84 @@
 /*
 Custom JS - START
 */
-async function outputResults(value){
+
+async function outputSearch(input){
   if (!dataFetched){
     await fetchData();
   }
-  //clearSearch();
-  if (value && value.trim().length > 0){
-    value = value.trim().toLowerCase();
-    displayResults(value)
+
+  var containers = document.getElementsByClassName('portion-1');
+  var new_containers = document.getElementsByClassName('course-container')
+
+  if (input !== ''){
+    for(const info of ap_resources){
+      if (input.trim().toLowerCase() == info.name.toLowerCase()){
+
+        for(var i = 0; i < containers.length; i++){
+          containers[i].style.display = 'none';
+        }
+
+        buildBox(info);
+
+      }
+
+      if (input.trim().toLowerCase() !== info.name.toLowerCase()){
+        //document.getElementById('warning-message-2').style.display = 'block';
+      }
+
+    }
   }
-  else{
-    clearSearch();
+  
+  if (input == ''){
+    for(var i = 0; i < new_containers.length; i++){
+      new_containers[i].style.display = 'none';
+    }
+    for(var i = 0; i < containers.length; i++){
+      containers[i].style.display = 'block';
+    }
   }
+
 }
+
+const buildBox = (info) => {
+  var course_container = document.createElement('div'); course_container.classList.add('course-container'); course_container.id = info.id + "-box";
+      let course_name = document.createElement('h4'); course_name.innerHTML = info.name;
+      let course_code = document.createElement('h6'); course_code.innerHTML = info.course_code;
+      course_container.appendChild(course_name);
+      course_container.appendChild(course_code);
+      let openup_container = document.createElement('div');
+          let course_description = document.createElement('p'); course_description.innerHTML = info.course_description;
+          openup_container.appendChild(course_description);
+          let info_block = document.createElement('div'); info_block.classList.add('info-block');
+              let grade = document.createElement('p'); grade.innerHTML = "Grade: ".concat(info.grade);
+              let dep = document.createElement('p'); dep.innerHTML = "Department: ".concat(info.course_type);
+              info_block.appendChild(grade);
+              info_block.appendChild(dep);
+          openup_container.appendChild(info_block);
+      let requirements = document.createElement('p'); requirements.innerHTML = "Prerequisits: ".concat(info.prerequisits); requirements.style.fontWeight = '500';
+      openup_container.appendChild(requirements);
+      course_container.appendChild(openup_container);
+    document.getElementById('ap-resources-content').appendChild(course_container);
+}
+
+document.getElementById('show-more-btn').addEventListener('click', function() {
+  var portion_2 = document.getElementsByClassName('portion-2');
+
+  for (var i = 0; i < portion_2.length; i++){
+    portion_2[i].classList.toggle('hide');
+  }
+
+  if (document.getElementById('show-more-btn').innerHTML = "Show More"){
+    document.getElementById('show-more-btn').innerHTML = "Show Less"
+  }
+
+})
 
 async function showInstructions(){
   if (!dataFetched){
     await fetchData();
   }
   getInputfromSelect();
-}
-
-function clearSearch() {
-  var results = document.getElementById('results-list');
-  results.innerHTML = "";
-  results.style.opacity = '0';
-  var box = document.getElementById('prerequisits-box');
-  box.innerHTML = "";
-}
-
-function displayResults(value){
-  var results = document.getElementById('results-list'); results.innerHTML = "";
-  for(const info of ap_resources){
-    if (info.name.trim().toLowerCase().indexOf(value) == 0){
-      results.style.opacity = '1';
-      if (document.getElementById(info.id) === null) {
-        let result_ele = document.createElement('li'); result_ele.classList.add('search-bar-result-ele'); result_ele.id = info.id; result_ele.innerHTML = info.name;
-        result_ele.addEventListener('click', function(){
-          displayPrerequisits(info.name.trim().toLowerCase());
-          results.style.opacity = '0';
-        });
-        results.appendChild(result_ele);
-      }
-    }
-  }
 }
 
 function displayPrerequisits(value){

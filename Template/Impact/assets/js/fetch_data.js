@@ -72,7 +72,8 @@ var ap_resources = [
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "11",
         "course_type": "Science",
-        "prerequisits": ["SNC2D"]
+        "prerequisits": ["SNC2D"],
+        "special_class": "portion-1"
     },
     {
         "id": "ap-2",
@@ -81,7 +82,8 @@ var ap_resources = [
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "Science",
-        "prerequisits": ["SPH3U"]
+        "prerequisits": ["SPH3U"],
+        "special_class": "portion-1"
     },
     {
         "id": "ap-3",
@@ -90,7 +92,8 @@ var ap_resources = [
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "Science",
-        "prerequisits": ["SCH3U"]
+        "prerequisits": ["SCH3U"],
+        "special_class": "portion-1"
     },
     {
         "id": "ap-4",
@@ -99,7 +102,8 @@ var ap_resources = [
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "Science",
-        "prerequisits": ["SBI3U"]
+        "prerequisits": ["SBI3U"],
+        "special_class": "portion-1"
     },
     {
         "id": "ap-5",
@@ -108,7 +112,8 @@ var ap_resources = [
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "English",
-        "prerequisits": ["ENG3U/NBE3U"]
+        "prerequisits": ["ENG3U/NBE3U"],
+        "special_class": "portion-1"
     },
     {
         "id": "ap-6",
@@ -117,7 +122,8 @@ var ap_resources = [
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "French as a Second Language",
-        "prerequisits": ["FEF3U"]
+        "prerequisits": ["FEF3U"],
+        "special_class": "portion-1"
     },
     {
         "id": "ap-7",
@@ -126,7 +132,8 @@ var ap_resources = [
         "course_description": "Lorem ipsum dolor sit amet",
         "grade": "12",
         "course_type": "Mathematics",
-        "prerequisits": ["MCR3U"]
+        "prerequisits": ["MCR3U"],
+        "special_class": "portion-2"
     }
 ];
 
