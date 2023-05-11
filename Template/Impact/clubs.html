@@ -161,16 +161,20 @@
   <!-- Club section - where all clubs will be displayed -->
   <section class="main-content-area">
     <!-- Keeping inline CSS so it's easy to change later on -->
-    <input style="margin-left: 10px;" type="text" id="clubSearch" onkeyup="searchClubs()" placeholder="Search.." title="Type in a club">
-    <div class="club-container">
-    <div id="clubs-content-1">
-      <ul id="wciClubs">
-
-        <li class="menu-button-2" id="all-btn">Show All</li>
-      </ul>
+    <div class="flex-container">
+      <input style="margin-left: 10px;" type="text" id="clubSearch" onkeyup="searchClubs()" placeholder="Search.." title="Type in a club">
+      <h5 id="warning-message">Sorry, but this club does not exist at WCI. Please try again!</h5>
     </div>
 
-    <div id="clubs-content-2"></div>
+    <div class="club-container">
+      <div id="clubs-content-1">
+        <ul id="wciClubs">
+
+          <li class="menu-button-2" id="all-btn">Show All</li>
+        </ul>
+      </div>
+
+      <div id="clubs-content-2"></div>
     </div>
   </section>
   <!-- End of Club section -->

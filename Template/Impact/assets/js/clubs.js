@@ -73,32 +73,33 @@ function searchClubs() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("clubSearch");
   filter = input.value.toUpperCase();
-  ul = document.getElementById("wciClubs");
-  li = ul.getElementsByTagName("li");
+  var titles = document.getElementsByClassName('box-title');
+  var boxes = document.getElementsByClassName('club-containers');
 
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
+  for(var i = 0; i < titles.length; i++){
+
+    if(filter == titles[i].innerHTML.toUpperCase()){
+
+      var box_id = (titles[i].id).slice(0, -6);
+      
+      for(var i = 0; i < boxes.length; i++){
+        boxes[i].style.display='none';
+        document.getElementById('warning-message').style.display = 'none';
+      }
+
+      document.getElementById(box_id).style.display='block';
     }
+
+    if (filter == ''){
+      document.getElementById('warning-message').style.display = 'none';
+      for(var i = 0; i < boxes.length; i++){
+        boxes[i].style.display='block';
+      }
+    }
+
+    if(filter !== titles[i] && filter !== ''){
+      document.getElementById('warning-message').style.display = 'block';
+    }
+
   }
 }
-
-// async function checkMenu(input){
-//   if (!dataFetched) {
-//     await fetchData();
-//   }
-
-//   var link = input.innerHTML;
-//   for (const info of clubs){
-//     if (info.name == link){
-//       var boxes = document.getElementsByClassName('club-containers');
-//       for(var i = 0; i < boxes.length; i++){
-//         boxes[i].classList.toggle('hide');
-//         document.getElementById(info.id).style.display='block';
-//       }
-//     }
-//   }
-// }

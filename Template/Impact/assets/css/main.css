@@ -86,7 +86,13 @@ section#services {
   border: solid 2px #008374;
   padding: 1%;
 }
-
+#warning-message{
+  display: none;
+  padding-left: 13%;
+}
+.flex-container {
+  display: flex;
+}
 .menu-button , .menu-button-2{
   text-decoration: underline;
   color: #008374;
